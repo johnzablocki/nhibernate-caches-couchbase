@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateCouchbaseCacheSample", "NHibernateCouchbaseCacheSample\NHibernateCouchbaseCacheSample.csproj", "{FCD65F88-AE7F-442E-9235-1B2BCDB82EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Caches.Couchbase", "NHibernate.Caches.Couchbase\NHibernate.Caches.Couchbase.csproj", "{EE66FEE1-5775-4B40-BBFE-319F3FB412D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernate.Caches.Couchbase.Tests", "NHibernate.Caches.Couchbase.Tests\NHibernate.Caches.Couchbase.Tests.csproj", "{49F3BCBF-924F-4CFD-A5F7-4C8C4F8FC319}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCD65F88-AE7F-442E-9235-1B2BCDB82EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD65F88-AE7F-442E-9235-1B2BCDB82EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD65F88-AE7F-442E-9235-1B2BCDB82EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD65F88-AE7F-442E-9235-1B2BCDB82EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE66FEE1-5775-4B40-BBFE-319F3FB412D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE66FEE1-5775-4B40-BBFE-319F3FB412D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE66FEE1-5775-4B40-BBFE-319F3FB412D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE66FEE1-5775-4B40-BBFE-319F3FB412D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F3BCBF-924F-4CFD-A5F7-4C8C4F8FC319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F3BCBF-924F-4CFD-A5F7-4C8C4F8FC319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F3BCBF-924F-4CFD-A5F7-4C8C4F8FC319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F3BCBF-924F-4CFD-A5F7-4C8C4F8FC319}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

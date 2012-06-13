@@ -1,0 +1,42 @@
+﻿@model NHibernateCouchbaseCacheSample.Models.Beer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+   <fieldset>
+        <legend>Beer</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Name)            
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Brewery)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.Brewery)            
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ABV)
+        </div>
+        <div class="editor-field">
+            @Html.DisplayFor(model => model.ABV)            
+        </div>       
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

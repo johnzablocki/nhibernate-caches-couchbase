@@ -1,0 +1,35 @@
+@{
+    ViewBag.Title = "NHibernate Couchbase Cache";
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@ViewBag.Title.</h1>
+            <h2>@ViewBag.Message</h2>
+        </hgroup>
+        <p>
+            Click over on the Beers tab to see the NHibernate Couchbase Cache in action.            
+        </p>
+    </div>
+</section>
+}
+
+<h3>We suggest the following:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>Configure the Couchbase .NET Client Library</h5>
+        &lt;section name=&quot;couchbase&quot; type=&quot;Couchbase.Configuration.CouchbaseClientSection, Couchbase&quot; /&gt;
+        <p />
+        &lt;couchbase&gt;<br/>    &lt;servers bucket=&quot;default&quot;&gt;<br/>      &lt;add uri=&quot;http://127.0.0.1:8091/pools&quot; /&gt;<br/>    &lt;/servers&gt;<br/>    &lt;socketPool minPoolSize=&quot;5&quot; maxPoolSize=&quot;20&quot; connectionTimeout=&quot;00:00:10&quot; deadTimeout=&quot;00:02:00&quot; /&gt;<br/>  &lt;/couchbase&gt;
+    </li>
+    <li class="two">
+        <h5>Configure NHibernate</h5>
+        &lt;section name=&quot;hibernate-configuration&quot; type=&quot;NHibernate.Cfg.ConfigurationSectionHandler, NHibernate&quot; /&gt;
+        <p />
+        &lt;hibernate-configuration xmlns=&quot;urn:nhibernate-configuration-2.2&quot;&gt;<br/>    &lt;session-factory&gt;<br/>      &lt;property name=&quot;connection.provider&quot;&gt;NHibernate.Connection.DriverConnectionProvider, NHibernate&lt;/property&gt;<br/>      &lt;property name=&quot;dialect&quot;&gt;NHibernate.Dialect.MsSql2000Dialect&lt;/property&gt;<br/>      &lt;property name=&quot;connection.driver_class&quot;&gt;NHibernate.Driver.SqlClientDriver&lt;/property&gt;<br/>      &lt;property name=&quot;connection.connection_string&quot;&gt;<br/>        Server=localhost;initial catalog=nhibernate;Integrated Security=SSPI<br/>      &lt;/property&gt;<br/>      &lt;property name=&quot;connection.isolation&quot;&gt;ReadCommitted&lt;/property&gt;<br/><strong>&lt;property name=&quot;cache.provider_class&quot;&gt; NHibernate.Caches.Couchbase.MemCacheProvider,NHibernate.Caches.Couchbase&lt;/property&gt; </strong><br/>    &lt;/session-factory&gt;<br/>  &lt;/hibernate-configuration&gt;
+    </li>    
+</ol>
+</section>
