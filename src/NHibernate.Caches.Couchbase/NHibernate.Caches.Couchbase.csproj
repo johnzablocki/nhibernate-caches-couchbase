@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Couchbase">
-      <HintPath>..\packages\CouchbaseNetClient.1.1.6\lib\net35\Couchbase.dll</HintPath>
+      <HintPath>..\packages\CouchbaseNetClient.1.2.6\lib\net35\Couchbase.dll</HintPath>
     </Reference>
     <Reference Include="Enyim.Caching">
-      <HintPath>..\packages\CouchbaseNetClient.1.1.6\lib\net35\Enyim.Caching.dll</HintPath>
+      <HintPath>..\packages\CouchbaseNetClient.1.2.6\lib\net35\Enyim.Caching.dll</HintPath>
     </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
